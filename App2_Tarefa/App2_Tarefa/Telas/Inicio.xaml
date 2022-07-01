@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2_Tarefa.Telas.Inicio"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+       
+        <StackLayout >
+            <StackLayout BackgroundColor="#0D1F2D" HeightRequest="250">
+                <Label Text="Meu Dia" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="White"/>
+                <Label Text="" x:Name="DataHoje" HorizontalOptions="Start" VerticalOptions="End"   TextColor="White"/>
+            </StackLayout>
+            <StackLayout x:Name="SLTarefas" Padding="10" Spacing="10">
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Image VerticalOptions="Center" Source="CheckOff.png"/>
+                    <Label HorizontalOptions="FillAndExpand" Text="Task 1"/>
+                    <Image VerticalOptions="Center" Source="p4.png"/>
+                    <Image VerticalOptions="Center" Source="Delete.png"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10">
+                    <Image VerticalOptions="Center" Source="CheckOn.png"/>
+                    <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" VerticalOptions="Center">
+                        <Label Text="Task 1" TextColor="Gray"/>
+                        <Label Text="Finalizado em 20/01/2018 às 17:00h" TextColor="LightGray" FontSize="10"/>
+                    </StackLayout>
+                    <Image VerticalOptions="Center" Source="p2.png"/>
+                    <Image VerticalOptions="Center" Source="Delete.png"/>
+                </StackLayout>
+            </StackLayout>
+            
+            <Button HorizontalOptions="Center" Clicked="ActionGoCadastro" ImageSource="AddBotao.png" BackgroundColor="Transparent"/> 
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
